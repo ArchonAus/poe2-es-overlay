@@ -93,10 +93,11 @@ The built executable will be created in `dist/`.
 
 - The app may require additional Linux desktop dependencies depending on your environment.
 - If OCR does not work, confirm that the `tesseract` binary is installed and available in your `PATH`.
+- In Path of Exile 2 you MUST have your Life/ES values displayed above the globes (see screenshot above). These values are what is read by the OCR.
 
 ## How to use the tuning tool
 
-1. Start Path of Exile 2 and open the tuning interface in-game.
+1. Start Path of Exile 2
 2. Run the overlay:
 
 ```bash
@@ -104,13 +105,12 @@ source .venv/bin/activate
 python overlay2.py
 ```
 
-3. Position the overlay window so it sits over the tuning UI.
-4. Use the overlay to monitor the detected text in real time while you adjust tuning settings in-game.
-5. If the OCR text looks incorrect, check that:
-   - Tesseract is installed and on your `PATH`.
-   - The overlay is capturing the correct screen region.
-   - The game window is visible and not minimized.
-
+3. From the system tray widget, choose "Enter tuning mode"
+4. Make sure PoE2 is visible in the background with the tuning window in front and actively selected.
+5. Use the arrows keys to move the red OCR box to encompass your ES current/full value (see screenshot above)
+6. If you need to resize the box, use Shift+arrows
+7. Press tab to toggle between the OCR box (Red) and the ORB box (blue). Resize the blue box to the size of your life globe (see screenshot above)
+8. Press CTRL+S to save the new config.
 
 ## License
 
