@@ -6,6 +6,16 @@ A lightweight Path of Exile 2 overlay for displaying OCR-detected text on screen
 
 This project captures part of the screen, processes the image, runs OCR, and displays the detected text in an overlay window.
 
+## Screenshots
+
+![Globe — Full](assets/Globe-Full.png)
+
+![Globe — Damaged](assets/Globe-Damaged.png)
+
+![Widget](assets/Widget.jpg)
+
+![Tuning screen](assets/Tuning.png)
+
 ## Features
 
 - Screen region capture
@@ -75,3 +85,25 @@ The built executable will be created in `dist/`.
 
 - The app may require additional Linux desktop dependencies depending on your environment.
 - If OCR does not work, confirm that the `tesseract` binary is installed and available in your `PATH`.
+
+## How to use the tuning tool
+
+1. Start Path of Exile 2 and open the tuning interface in-game.
+2. Run the overlay:
+
+```bash
+source .venv/bin/activate
+python overlay2.py
+```
+
+3. Position the overlay window so it sits over the tuning UI.
+4. Use the overlay to monitor the detected text in real time while you adjust tuning settings in-game.
+5. If the OCR text looks incorrect, check that:
+   - Tesseract is installed and on your `PATH`.
+   - The overlay is capturing the correct screen region.
+   - The game window is visible and not minimized.
+
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
