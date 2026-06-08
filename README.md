@@ -9,15 +9,19 @@ This project captures part of the screen, processes the image, runs OCR, and dis
 ## Screenshots
 
 Energy Shield when full:
+
 ![Globe — Full](assets/Globe-Full.png)
 
 Energy Shield when damaged:
+
 ![Globe — Damaged](assets/Globe-Damaged.png)
 
 Configuration Widget:
+
 ![Widget](assets/Widget.jpg)
 
 Tuning Screen (used to reposition the OCR area or the ES Globe)
+
 ![Tuning screen](assets/Tuning.png)
 
 ## Features
